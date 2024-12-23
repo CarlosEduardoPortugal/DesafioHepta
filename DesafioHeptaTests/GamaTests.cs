@@ -13,9 +13,9 @@ public class GamaTests
             "01111", "00111", "11100", "10000", "11001", 
             "00010", "01010"
         };
-        var strategy = new GamaCalculationStrategy();
+        var strategy = new EnergyGamaCalculation();
 
-        string resultado = strategy.EnergyConsumer(numerosBinarios);
+        string resultado = strategy.Calculate(numerosBinarios);
 
         Assert.Equal("10110", resultado);
     }
@@ -24,8 +24,8 @@ public class GamaTests
     public void Gama_ComListaVazia_DeveLancarExcecao()
     {
         var numerosBinarios = new List<string>();
-        var strategy = new GamaCalculationStrategy();
+        var strategy = new EnergyGamaCalculation();
 
-        Assert.Throws<ArgumentOutOfRangeException>(() => strategy.EnergyConsumer(numerosBinarios));
+        Assert.Throws<ArgumentOutOfRangeException>(() => strategy.Calculate(numerosBinarios));
     }
 }

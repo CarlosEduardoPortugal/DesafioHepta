@@ -2,19 +2,19 @@ namespace DesafioHepta;
 
 public class Submarine : ISubmarine
 {
-    private readonly GamaCalculationStrategy _gamaCalculator;
-    private readonly EpsilonCalculationStrategy _epsilonCalculator;
+    private readonly EnergyGamaCalculation _energyGamaCalculator;
+    private readonly EnergyEpsilonCalculation _energyEpsilonCalculator;
 
     public Submarine()
     {
-        _gamaCalculator = new GamaCalculationStrategy();
-        _epsilonCalculator = new EpsilonCalculationStrategy();
+        _energyGamaCalculator = new EnergyGamaCalculation();
+        _energyEpsilonCalculator = new EnergyEpsilonCalculation();
     }
 
     public int Energy(List<string> numbers)
     {
-        var gamaNumber = _gamaCalculator.EnergyConsumer(numbers);
-        var epilsonNumber = _epsilonCalculator.EnergyConsumer(numbers);
+        var gamaNumber = _energyGamaCalculator.Calculate(numbers);
+        var epilsonNumber = _energyEpsilonCalculator.Calculate(numbers);
 
         return Convert.ToInt32(gamaNumber, 2) * Convert.ToInt32(epilsonNumber, 2);
     }

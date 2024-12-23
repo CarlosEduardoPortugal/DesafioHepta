@@ -1,8 +1,8 @@
 namespace DesafioHepta;
 
-public class EpsilonCalculationStrategy : ISubmarineCalculatorStrategy
+public class EnergyGamaCalculation : ISubmarineCalculatorStrategy
 {
-    public string EnergyConsumer(List<string> numbers)
+    public string Calculate(List<string> numbers)
     {
         var result = "";
         var bitLength = numbers[0].Length;
@@ -12,7 +12,7 @@ public class EpsilonCalculationStrategy : ISubmarineCalculatorStrategy
             var ones = numbers.Count(num => num[i] == '1');
             var zeros = numbers.Count - ones;
 
-            result += ones >= zeros ? "0" : "1";
+            result += ones >= zeros ? "1" : "0";
         }
 
         return result;

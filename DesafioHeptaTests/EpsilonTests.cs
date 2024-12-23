@@ -13,9 +13,9 @@ public class EpsilonTests
             "01111", "00111", "11100", "10000", "11001", 
             "00010", "01010"
         };
-        var strategy = new EpsilonCalculationStrategy();
+        var strategy = new EnergyEpsilonCalculation();
 
-        string resultado = strategy.EnergyConsumer(numerosBinarios);
+        string resultado = strategy.Calculate(numerosBinarios);
 
         Assert.Equal("01001", resultado);
     }
@@ -24,8 +24,8 @@ public class EpsilonTests
     public void Epsilon_ComListaVazia_DeveLancarExcecao()
     {
         var numerosBinarios = new List<string>();
-        var strategy = new EpsilonCalculationStrategy();
+        var strategy = new EnergyEpsilonCalculation();
 
-        Assert.Throws<ArgumentOutOfRangeException>(() => strategy.EnergyConsumer(numerosBinarios));
+        Assert.Throws<ArgumentOutOfRangeException>(() => strategy.Calculate(numerosBinarios));
     }
 }
