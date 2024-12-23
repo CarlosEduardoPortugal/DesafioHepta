@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioHepta", "DesafioHepta\DesafioHepta.csproj", "{C280248A-06B8-4844-A72D-19947F95122F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioHeptaTests", "DesafioHeptaTests\DesafioHeptaTests.csproj", "{82A605A6-D5EF-4C0A-992C-57E0FF036B46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C280248A-06B8-4844-A72D-19947F95122F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C280248A-06B8-4844-A72D-19947F95122F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C280248A-06B8-4844-A72D-19947F95122F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C280248A-06B8-4844-A72D-19947F95122F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A605A6-D5EF-4C0A-992C-57E0FF036B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A605A6-D5EF-4C0A-992C-57E0FF036B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A605A6-D5EF-4C0A-992C-57E0FF036B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A605A6-D5EF-4C0A-992C-57E0FF036B46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
