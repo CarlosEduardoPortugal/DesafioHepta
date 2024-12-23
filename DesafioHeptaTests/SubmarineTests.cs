@@ -21,11 +21,11 @@ public class SubmarineTests
     }
 
     [Fact]
-    public void BitCalculator_ComListaVazia_DeveLancarExcecao()
+    public void Submarine_ComListaVazia_DeveLancarExcecao()
     {
         var numerosBinarios = new List<string>();
         var calculator = new Submarine();
 
-        Assert.Throws<ArgumentException>(() => calculator.Energy(numerosBinarios));
+        Assert.Throws<ArgumentOutOfRangeException>(() => calculator.Energy(numerosBinarios));
     }
 }
